@@ -1,0 +1,253 @@
+[
+  {
+    "id": 1,
+    "name": "Jollof Rice",
+    "ingredients": ["Rice", "Tomatoes", "Pepper", "Onion"],
+    "image": "https://i.pinimg.com/1200x/a7/4b/cb/a74bcb0ac99a32475e945016731d8d39.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Fried Rice",
+    "ingredients": ["Rice", "Egg", "Carrots", "Peas"],
+    "image": "https://i.pinimg.com/1200x/44/67/f4/4467f46691bf41143404de960757ddbd.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Eba and Egusi",
+    "ingredients": ["Garri", "Meat", "Egusi", "Peas"],
+    "image": "https://i.pinimg.com/736x/ce/ed/3b/ceed3bba07ea9305b0f58095dcb7474e.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Nkwobi",
+    "ingredients": ["Onions", "Meat", "Peppers", "Palm oil"],
+    "image": "https://i.pinimg.com/1200x/0e/67/31/0e6731ab65981d984df639e8050abb71.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Amala and Ewedu",
+    "ingredients": [
+      "Onions",
+      "Ewedu leaves",
+      "Meat",
+      "Chilli Pepper",
+      "Crayfish"
+    ],
+    "image": "https://i.pinimg.com/736x/cc/40/70/cc40706d87a228edcedd79a033dea0ea.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Bole",
+    "ingredients": ["Plantain", "Fish", "Peppers"],
+    "image": "https://i.pinimg.com/736x/bc/62/40/bc624023b54b5bbb22073cfc42780315.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Suya",
+    "ingredients": ["Meat", "Onions", "Peppers"],
+    "image": "https://i.pinimg.com/736x/73/c8/4d/73c84df93a770108f50657de2f6b6900.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Meat Pie",
+    "ingredients": ["Meat", "Flour", "Peppers"],
+    "image": "https://i.pinimg.com/736x/8e/09/c4/8e09c42568e84a2ac89a2120bc8304b0.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Afang Soup",
+    "ingredients": [
+      "Meat",
+      "Fresh waterleaves",
+      "Peppers",
+      "Snails",
+      "Palm oil"
+    ],
+    "image": "https://i.pinimg.com/736x/4b/a2/74/4ba274c5fde9f1d84382b5a2eb30ed1c.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Egusi Soup",
+    "ingredients": [
+      "Egusi (melon seeds)",
+      "Leafy greens",
+      "Meat/fish",
+      "Palm oil"
+    ],
+    "image": "https://i.pinimg.com/736x/ce/ed/3b/ceed3bba07ea9305b0f58095dcb7474e.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Efo Riro",
+    "ingredients": ["Spinach or pumpkin leaves", "Tomatoes", "Meat", "Fish"],
+    "image": "https://i.pinimg.com/736x/8b/ef/51/8bef51b50e49017ef86f91edc15a529a.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Moi Moi",
+    "ingredients": ["Beans", "Onion", "Crayfish", "Oil"],
+    "image": "https://i.pinimg.com/736x/4b/d3/37/4bd33774b2aad15f683299eca5d3f164.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Tuwo Shinkafa",
+    "ingredients": ["Rice", "Water"],
+    "image": "https://i.pinimg.com/1200x/0b/37/36/0b37365619619f5f3606e3bb1470ac77.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Pounded Yam",
+    "ingredients": ["Yam", "Water"],
+    "image": "https://cheflolaskitchen.com/wp-content/uploads/2019/06/DSC0174-pounded-yam.jpg.webp"
+  },
+  {
+    "id": 15,
+    "name": "Okra Soup",
+    "ingredients": ["Okra", "Meat/fish", "Palm oil", "Leafy greens"],
+    "image": "https://i.pinimg.com/736x/26/1a/f8/261af8e5aa7817f724a58f1d4ddce712.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Ogbono Soup",
+    "ingredients": ["Ogbono seeds", "Leafy greens", "Meat/fish", "Palm oil"],
+    "image": "https://i.pinimg.com/736x/e8/f3/50/e8f350b6bb4e77e7de3acdf53ac30bad.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Ewa Agoyin",
+    "ingredients": ["Beans", "Pepper sauce", "Palm oil"],
+    "image": "https://i.pinimg.com/736x/72/c3/36/72c33608774c8891538e0071a44324cb.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Akara",
+    "ingredients": ["Beans", "Onion", "Oil"],
+    "image": "https://i.pinimg.com/1200x/b9/a8/3f/b9a83f208a128db62ff78c621cb7b6cb.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Pepper Soup",
+    "ingredients": ["Spices", "Meat/fish", "Pepper", "Broth"],
+    "image": "https://i.pinimg.com/1200x/a8/27/15/a8271568fcbadfbd2a3c3f20e5de1f9d.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Chin Chin",
+    "ingredients": ["Flour", "Sugar", "Butter", "Egg"],
+    "image": "https://i.pinimg.com/1200x/8c/43/51/8c43517573225c2ba7b4eb857acf5c2d.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Puff Puff",
+    "ingredients": ["Flour", "Sugar", "Yeast", "Oil"],
+    "image": "https://i.pinimg.com/736x/ff/ac/b6/ffacb64af7c22a7e2060e454a0d75e90.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Ofada Rice & Ayamase",
+    "ingredients": ["Ofada rice", "Green pepper sauce", "Meat", "Locust beans"],
+    "image": "https://i.pinimg.com/736x/a4/f3/21/a4f3210634c6b079a768019f36e86df5.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Boiled Yam & Egg Sauce",
+    "ingredients": ["Yam", "Egg", "Tomato sauce"],
+    "image": "https://i.pinimg.com/736x/ac/43/f3/ac43f36ea6b0f550c6fadc3b445f73e7.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Fried Plantain (Dodo)",
+    "ingredients": ["Plantain", "Oil", "Salt"],
+    "image": "https://i.pinimg.com/736x/5d/c4/6c/5dc46c5c92f95c74ba268e78d3e80c66.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Yam Porridge (Asaro)",
+    "ingredients": ["Yam", "Tomatoes", "Palm oil", "Fish/meat"],
+    "image": "https://i.pinimg.com/1200x/53/fc/94/53fc9470a67eb753de356840c68fbc22.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Catfish Stew",
+    "ingredients": ["Catfish", "Tomato/pepper mix", "Onion", "Palm oil"],
+    "image": "https://i.pinimg.com/736x/f8/95/88/f8958854556c287343ff1e7ef4f0cbff.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Beans Porridge",
+    "ingredients": ["Beans", "Palm oil", "Fish/meat", "Spices"],
+    "image": "https://i.pinimg.com/736x/94/84/e8/9484e815b4e33efa5d27e64de107d497.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Grilled Plantain with Groundnut",
+    "ingredients": ["Plantain", "Groundnut", "Peppers"],
+    "image": "https://i.pinimg.com/736x/9c/e6/85/9ce685bed05b4fba665a1770e7487ada.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Smoked Goat Meat (Asun)",
+    "ingredients": ["Goat meat", "Spices", "Oil"],
+    "image": "https://i.pinimg.com/1200x/6c/91/08/6c9108c533853d39fb76656f25e33289.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Native Jollof Rice (Iwuk Edesi)",
+    "ingredients": ["Rice", "Palm oil", "Tomatoes", "Pepper"],
+    "image": "https://i.pinimg.com/736x/64/e8/0f/64e80fa537921ca0011e0f540a3b0cb7.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Masa",
+    "ingredients": ["Rice flour", "Yeast", "Sugar"],
+    "image": "https://i.pinimg.com/736x/0d/83/b1/0d83b1c01142eb806c3a43fe713d4316.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Wheat Meat Pie (Student Pie)",
+    "ingredients": ["Wheat flour", "Beef", "Vegetables", "Spices"],
+    "image": "https://i.pinimg.com/1200x/d7/be/f8/d7bef8cbda8b07a24e2b039a9e527cca.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Grilled Fish & Pepper Sauce",
+    "ingredients": ["Fish", "Pepper sauce", "Onion", "Lemon"],
+    "image": "https://i.pinimg.com/1200x/3d/05/e2/3d05e213977e5332122982dc74e6896a.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Rice & Beans with Stew",
+    "ingredients": ["Rice", "Beans", "Tomato stew"],
+    "image": "https://i.pinimg.com/736x/25/d8/48/25d848730fa9466b581db616e63e2a5d.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Fufu & Light Soup",
+    "ingredients": ["Cassava/yam fufu", "Light soup", "Meat/fish"],
+    "image": "https://i.pinimg.com/1200x/d1/91/88/d19188f6dcc876c7181db2797e951b70.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Fish Roll",
+    "ingredients": ["Fish", "Flour", "Spices"],
+    "image": "https://i.pinimg.com/1200x/34/73/a7/3473a79a2d3e86f3e54e3c93d6a3a75c.jpg"
+  },
+  {
+    "id": 37,
+    "name": "African Nut Soup (Maafe Nigerian Style)",
+    "ingredients": ["Peanut butter/groundnuts", "Meat", "Vegetables", "Spices"],
+    "image": "https://i.pinimg.com/736x/55/c4/90/55c4901c2bd941111f8293b46da3ca85.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Spicy Cow Foot",
+    "ingredients": ["Cow foot", "Spice mix", "Palm oil", "Onion"],
+    "image": "https://i.pinimg.com/736x/fd/c8/fd/fdc8fd02d10cb29c1ff37c1b5e0cdc55.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Vegetable Sauce & Boiled Yam",
+    "ingredients": ["Boiled yam", "Vegetable sauce", "Onion", "Pepper"],
+    "image": "https://i.pinimg.com/736x/cd/dc/f7/cddcf7577f7021aea95036d3bca8d5bd.jpg"
+  }
+]
