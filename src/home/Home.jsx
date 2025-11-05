@@ -19,7 +19,7 @@ export default function Home(){
 },[]);
 
  const filteredRecipes = search.trim() === ""
-      ? recipes.slice(0,9)
+      ? recipes.slice(0,8)
       : recipes.filter(recipe =>
     recipe.name.toLowerCase().includes(search.toLowerCase())
   );
