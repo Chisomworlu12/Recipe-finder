@@ -1,6 +1,7 @@
 import { useState } from "react"
-import RecipeDetails from "./RecipeDetails.JSX"
+
 import { createPortal } from "react-dom"
+import RecipeDetails from "./RecipeDetails.JSX"
 
 export default function RecipeCard({recipe}){
        const [isOpen, setIsOpen] = useState(false)
