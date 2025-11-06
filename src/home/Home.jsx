@@ -69,7 +69,7 @@ setErroMsg(err.message)
 
 
     return (<div>
-    <Header><Search search={search} setSearch={setSearch}  /></Header>
+    <Header><Search search={search} setSearch={setSearch} /></Header>
     <BookMark bookMarks={bookMarks} setBookMarks={setBookMarks} recipes={recipes}/> 
    { isLoading && <Loader/>}
    { !isLoading && !errorMsg &&<RecipeList recipes={filteredRecipes} search={search} onToggleFavorite={toggleFavorite} bookMarks={bookMarks}/> }
