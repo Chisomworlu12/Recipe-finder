@@ -19,8 +19,9 @@ const bookMarked = function(){
     const [search, setSearch] = useState('')
     const [isLoading,setIsLoading ] =useState(false)
     const [errorMsg,setErroMsg ] =useState("")
-
+  const [displayCount, setDisplayCount] = useState(8)
     const [bookMarks, setBookMarks] = useState(bookMarked())
+
 
 
     // Recipe fetch data
@@ -48,12 +49,12 @@ setErroMsg(err.message)
 
 // Recipe filter
  const filteredRecipes = search.trim() === ""
-      ? recipes.slice(0,8)
+      ? recipes.slice(0,displayCount)
       : recipes.filter(recipe =>
     recipe.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  // tohhle favourite
+  // toggle favourite
   function toggleFavorite(recipe) {
     setBookMarks((prev) => {
       const isBookmarked = prev.some((item) => item.id === recipe.id)
@@ -65,7 +66,12 @@ setErroMsg(err.message)
     })
   }
 
+  function handleLoadMore() {
+        setDisplayCount(prev => prev + 4) 
+    }
   
+     const hasMore = search.trim() === "" && displayCount <recipes.length
+
 
 
     return (<div>
@@ -74,6 +80,7 @@ setErroMsg(err.message)
    { isLoading && <Loader/>}
    { !isLoading && !errorMsg &&<RecipeList recipes={filteredRecipes} search={search} onToggleFavorite={toggleFavorite} bookMarks={bookMarks}/> }
     {errorMsg && <ErrorMessage message={errorMsg} />}
+   {hasMore && <ButtonLoadMore onHandleLoadMore={handleLoadMore}/>}
     </div>)
 }
 
@@ -85,4 +92,12 @@ function Loader() {
 
 function ErrorMessage({message}) {
   return <div className="flex justify-center items-center font-bold mt-20"> <p className="text-[25px]">{message}</p></div>
+}
+
+function ButtonLoadMore({onHandleLoadMore}){
+ return <div className="flex justify-center my-8">
+ <button  className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg" onClick={onHandleLoadMore}>
+  See More
+ </button>
+ </div>
 }
