@@ -2,17 +2,28 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import RecipeList from "../components/RecipeList";
 import Search from "../components/Search";
+import BookMark from "../components/Bookmark";
+
 
 
 
 
 export default function Home(){
+const bookMarked = function(){
+    const saved = localStorage.getItem('recipe-bookmarks')
+    return saved ? JSON.parse(saved) : []
+  }
+
+
     const [recipes, setRecipes] = useState([])
     const [search, setSearch] = useState('')
     const [isLoading,setIsLoading ] =useState(false)
     const [errorMsg,setErroMsg ] =useState("")
 
+    const [bookMarks, setBookMarks] = useState(bookMarked())
 
+
+    // Recipe fetch data
     useEffect( function(){
     async function fetchRecipe() {
       try{  setIsLoading(true)
@@ -28,17 +39,40 @@ setErroMsg(err.message)
     fetchRecipe()
 },[]);
 
+
+// bookMark loclstorage
+
+ useEffect(function() {
+    localStorage.setItem('recipe-bookmarks', JSON.stringify(bookMarks))
+  }, [bookMarks])
+
+// Recipe filter
  const filteredRecipes = search.trim() === ""
       ? recipes.slice(0,8)
       : recipes.filter(recipe =>
     recipe.name.toLowerCase().includes(search.toLowerCase())
   );
 
+  // tohhle favourite
+  function toggleFavorite(recipe) {
+    setBookMarks((prev) => {
+      const isBookmarked = prev.some((item) => item.id === recipe.id)
+      if (isBookmarked) {
+        return prev.filter((item) => item.id !== recipe.id)
+      } else {
+        return [...prev, recipe]
+      }
+    })
+  }
+
+  
+
 
     return (<div>
-    <Header><Search search={search} setSearch={setSearch}  /></Header> 
+    <Header><Search search={search} setSearch={setSearch}  /></Header>
+    <BookMark bookMarks={bookMarks} setBookMarks={setBookMarks} recipes={recipes}/> 
    { isLoading && <Loader/>}
-   { !isLoading && !errorMsg &&<RecipeList recipes={filteredRecipes} search={search}/>}
+   { !isLoading && !errorMsg &&<RecipeList recipes={filteredRecipes} search={search} onToggleFavorite={toggleFavorite} bookMarks={bookMarks}/> }
     {errorMsg && <ErrorMessage message={errorMsg} />}
     </div>)
 }
